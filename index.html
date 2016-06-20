@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+	<link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" />
+<!--  	<script type='text/javascript' src='javascripts/app.js'></script> -->
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+	<h1 class='center'>Rock, Paper, Scissors</h1>
+	<div class='row'>
+		<h4 class='center'>Choose:</h4>
+	</div>
+
+	<div class='row center container'>
+		
+		<div class='userSelect col m4'  id='rock'>
+			<img alt='Rock' src="./images/rock.png">
+		</div>
+			
+		<div class='userSelect col m4' id='paper'>
+			<img alt='Paper' src="./images/paper.png">
+		</div>
+
+		<div class='userSelect col m4' id='scissors'>
+			<img alt='Scissors' src="./images/scissors.png">
+		</div>
+
+	</div>
+
+	<div class='row center container'>
+		<h4 class='col m6' id='useroutput'>You Chose:</h4>
+		<h4 class='col m6' id="compoutput">Computer Chose:</h4>
+	</div>
+	<div class='row center container'>
+		<h5 class='col m6' id='user_output'></h5>
+		<h5 class='col m6' id='comp_output'></h5>
+	</div>
+	<div class='row center container'>
+		<h4 class= 'col m12' id='winner_output'></h4>
+	</div>
+	<div class='row'>
+		<button class='btn col s2 offset-s5' id="reset">Play Again</button>
+	</div>
+	<hr />
+
+	<div class='row center container'>
+		<h4 class='col m12'>Stats:</h5>
+		<h5 class='col m4'>User Wins:</h5>
+		<h5 class='col m4'>Computer Wins:</h5>
+		<h5 class='col m4'>Ties:</h5>
+	</div>
+	<div class='row center container'>
+		<h5 class='col m4' id='user_stat'>0</h5>
+		<h5 class='col m4' id='comp_stat'>0</h5>
+		<h5 class='col m4' id='tie_stat'>0</h5>
+	</div>
+	<div class='row'>
+		<button class='btn col s2 offset-s5' id='recReset'>Reset Records</button>
+	</div>
+	<script src="javascripts/app.js" type="text/babel" />
+</body>
+</html>
